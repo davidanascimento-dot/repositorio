@@ -1,0 +1,24 @@
+{
+  "name": "simulado-saep",
+  "version": "1.0.0",
+  "description": "Simulado Pratico SAEP - CRUD de equipamentos para assistencia tecnica",
+  "main": "backend/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.2",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^4.22.3",
+    "pg": "^8.23.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

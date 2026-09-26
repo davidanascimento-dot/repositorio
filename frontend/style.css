@@ -1,0 +1,200 @@
+/* public/style.css - layout da tela deAssistência Técnica */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f4f6f8;
+  color: #1f2933;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  padding: 0 1rem 3rem;
+  line-height: 1.5;
+}
+
+/* ---------- cabeçalho ---------- */
+
+header {
+  background: #1e3a5f;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+/* ---------- cartões ---------- */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+  color: #1e3a5f;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e3e8ee;
+}
+
+/* ---------- formulário ---------- */
+
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.88rem;
+  margin-top: 0.85rem;
+  color: #33475b;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  margin-top: 0.3rem;
+  border: 1px solid #c3ccd6;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: #fff;
+  color: #1f2933;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1e3a5f;
+  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.12);
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ---------- botões ---------- */
+
+.botoes {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 0.6rem 1.3rem;
+  border: none;
+  border-radius: 5px;
+  background: #1e3a5f;
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover {
+  background: #2b5183;
+}
+
+button.secundario {
+  background: #6b7c8f;
+}
+
+button.secundario:hover {
+  background: #566676;
+}
+
+button.perigo {
+  background: #c0392b;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+}
+
+button.perigo:hover {
+  background: #9c2f24;
+}
+
+/* ---------- mensagens ---------- */
+
+.mensagem {
+  margin-top: 1rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.mensagem:empty {
+  display: none;
+}
+
+.mensagem.sucesso {
+  display: block;
+  background: #e4f5ea;
+  color: #1c6b38;
+  border-left: 4px solid #2e9c55;
+}
+
+.mensagem.erro {
+  display: block;
+  background: #fdecea;
+  color: #922b21;
+  border-left: 4px solid #c0392b;
+}
+
+/* ---------- tabela ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  padding: 0.6rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #e3e8ee;
+  vertical-align: top;
+}
+
+th {
+  background: #eef2f6;
+  color: #33475b;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+td button {
+  margin-right: 0.3rem;
+}
