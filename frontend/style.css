@@ -9,16 +9,15 @@
 body {
   background: #f4f6f8;
   color: #1f2933;
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+
   padding: 0 1rem 3rem;
   line-height: 1.5;
 }
 
-/* ---------- cabeçalho ---------- */
+
 
 header {
-  background: #1e3a5f;
-  color: #fff;
+  color: #242424;
   padding: 1.5rem 1rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -34,7 +33,7 @@ header p {
   font-size: 0.95rem;
 }
 
-/* ---------- cartões ---------- */
+
 
 main {
   max-width: 1000px;
@@ -45,10 +44,11 @@ main {
 }
 
 .card {
-  background: #fff;
+
   border-radius: 8px;
   padding: 1.25rem 1.5rem 1.5rem;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+position: relative;
+background-color: #cccfd396;
 }
 
 .card h2 {
@@ -56,10 +56,10 @@ main {
   font-size: 1.15rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #e3e8ee;
+
 }
 
-/* ---------- formulário ---------- */
+
 
 label {
   display: block;
@@ -95,7 +95,7 @@ textarea {
   resize: vertical;
 }
 
-/* ---------- botões ---------- */
+
 
 .botoes {
   display: flex;
@@ -105,29 +105,23 @@ textarea {
 }
 
 button {
-  padding: 0.6rem 1.3rem;
+margin-bottom: 10px;
   border: none;
-  border-radius: 5px;
   background: #1e3a5f;
   color: #fff;
-  font-size: 0.92rem;
-  font-weight: 600;
+padding: 10px;
+border: 2px;
   font-family: inherit;
-  cursor: pointer;
-  transition: background 0.15s ease;
+
 }
 
-button:hover {
-  background: #2b5183;
-}
 
 button.secundario {
   background: #6b7c8f;
 }
 
-button.secundario:hover {
-  background: #566676;
-}
+
+
 
 button.perigo {
   background: #c0392b;
@@ -135,11 +129,7 @@ button.perigo {
   font-size: 0.8rem;
 }
 
-button.perigo:hover {
-  background: #9c2f24;
-}
 
-/* ---------- mensagens ---------- */
 
 .mensagem {
   margin-top: 1rem;
@@ -157,17 +147,17 @@ button.perigo:hover {
   display: block;
   background: #e4f5ea;
   color: #1c6b38;
-  border-left: 4px solid #2e9c55;
+
 }
 
 .mensagem.erro {
   display: block;
   background: #fdecea;
   color: #922b21;
-  border-left: 4px solid #c0392b;
+
 }
 
-/* ---------- tabela ---------- */
+
 
 table {
   width: 100%;
@@ -191,9 +181,7 @@ th {
   letter-spacing: 0.4px;
 }
 
-tbody tr:hover {
-  background: #f8fafc;
-}
+
 
 td button {
   margin-right: 0.3rem;
