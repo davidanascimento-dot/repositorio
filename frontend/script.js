@@ -1,4 +1,4 @@
-/* public/script.js - consome a API de equipamentos */
+
 const API = '/equipamentos';
 
 const form = document.getElementById('form-equipamento');
@@ -36,7 +36,6 @@ async function requisicao(metodo, caminho, corpo) {
   return dados;
 }
 
-// GET /equipamentos
 async function carregarEquipamentos() {
   try {
     const equipamentos = await requisicao('GET', API);
@@ -65,7 +64,7 @@ async function carregarEquipamentos() {
   }
 }
 
-// POST /equipamentos e PUT /equipamentos/:id
+
 form.addEventListener('submit', async (evento) => {
   evento.preventDefault();
 
@@ -95,7 +94,8 @@ form.addEventListener('submit', async (evento) => {
   }
 });
 
-// Clique nos botões de ação da tabela
+
+
 corpoTabela.addEventListener('click', async (evento) => {
   const botao = evento.target.closest('button');
   if (!botao) return;

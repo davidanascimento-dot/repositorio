@@ -1,4 +1,4 @@
-/* public/style.css - layout da tela deAssistência Técnica */
+
 
 * {
   box-sizing: border-box;
@@ -145,14 +145,14 @@ button.perigo {
 
 .mensagem.sucesso {
   display: block;
-  background: #e4f5ea;
+
   color: #1c6b38;
 
 }
 
 .mensagem.erro {
   display: block;
-  background: #fdecea;
+
   color: #922b21;
 
 }
@@ -174,7 +174,6 @@ td {
 }
 
 th {
-  background: #eef2f6;
   color: #33475b;
   font-size: 0.82rem;
   text-transform: uppercase;
